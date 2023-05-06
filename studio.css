@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.bg {
+    background: #f7f7f7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+    gap: 20px;
+}
+
+.main-img img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.options-div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options-div .txt {
+    width: 100%;
+}
+
+.other-images table tr {
+    display: flex;
+    gap: 12px;
+}
+
+.other-images table tr td img {
+    width: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options-div .colors table tr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+
+.options-div .colors table td span {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.purple {
+    background: rgb(56, 68, 132);
+}
+
+.grey {
+    background: rgb(153, 153, 153);
+}
+
+.pink {
+    background: rgb(244, 204, 228);
+}
+
+.black {
+    background: rgb(43, 43, 43);
+}
+
+.silver {
+    background: rgb(208, 209, 211);
+}
+
+.red {
+    background: rgb(177, 3, 17);
+}
+
+.btn-div {
+    width: 80%;
+    height: 50px;
+}
+
+.btn-div a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: rgb(22, 22, 22);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+section {
+    display: none;
+}
+
+@media screen and (min-width: 1100px) {
+    main {
+        display: none;
+    }
+    section {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 80px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+    }
+    section .other-images table tr {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    section .other-images table tr td img {
+        width: 80px;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 4px 6px 14px rgb(0 0 0 / 10%);
+        border-radius: 5px;
+    }
+    section .main-img {
+        width: 700px;
+        padding: 0px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    section .main-img img{
+        border-radius: 20px;
+        width: 500px;
+    }
+    section .heading h2 {
+        font-size: 40px;
+    }
+    section .heading p {
+        font-size: 22px;
+    }
+    section .txt h3 {
+        font-size: 28px;
+    }
+    section .txt p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    section .left-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    section .options-div {
+        gap: 40px;
+    }
+    section .btn-div {
+        margin-top: 30px;
+    }
+}
